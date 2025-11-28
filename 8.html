@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тема 8</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/googlecode.min.css"
+    />
+
+    <style>
+      #mario_background {
+        display: block;
+        height: auto;
+        width: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- <div class="links">
+        <a href="#"></a>
+        <a href="./index.html">Всі теми</a>
+        <a href="#"></a>
+      </div> -->
+      <h1>Тема 8</h1>
+      <p class="topic">Гіперосилання</p>
+    </header>
+
+    <main>
+      <hr />
+
+      <section class="accordion">
+        <!-- Завдання 0 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <div><span class="star">✦</span> Завдання (підготовка)</div>
+            <span class="acc-arrow">▶</span>
+          </div>
+
+          <div class="accordion__content">
+            <ol>
+              <li>
+                Створи новий файл з назвою
+                <span class="accent">index8_1.html</span>.
+              </li>
+
+              <li>
+                Додай у файл базові теги:
+                <span class="accent">html</span>,
+                <span class="accent">head</span>,
+                <span class="accent">body</span>,
+                <span class="accent">style</span>.
+              </li>
+
+              <li>Відкрий сторінку в браузері та перевір, що вона працює.</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Завдання 1 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <div><span class="star">✦</span> Завдання (Частина 1 — HTML)</div>
+            <span class="acc-arrow">▶</span>
+          </div>
+
+          <div class="accordion__content">
+            <p>У тілі сторінки потрібно створити такі елементи:</p>
+
+            <ol>
+              <li>
+                Заголовок 1-го рівня з текстом:
+                <span class="accent">Світ Маріо</span>.
+              </li>
+
+              <br />
+
+              <li>
+                Параграф з атрибутом
+                <span class="accent">id="menu"</span>, у якому всередині 4
+                посилання:
+                <ul type="square">
+                  <li>
+                    На елемент з <span class="accent">id="mario"</span> — текст
+                    посилання «Маріо».
+                  </li>
+                  <li>
+                    На елемент з <span class="accent">id="luigi"</span> —
+                    «Луїджі».
+                  </li>
+                  <li>
+                    На елемент з <span class="accent">id="peach"</span> —
+                    «Принцеса Піч».
+                  </li>
+                  <li>
+                    На елемент з <span class="accent">id="bowser"</span> —
+                    «Боузер».
+                  </li>
+                </ul>
+              </li>
+
+              <br />
+
+              <li>
+                <b>Блок про Маріо</b>
+                <ul type="square">
+                  <li>
+                    Картинка з атрибутом
+                    <span class="accent">align="left"</span>:
+                  </li>
+                  <pre class="accent" style="color: yellowgreen">
+https://upload.wikimedia.org/wikipedia/en/5/5c/Mario_by_Shigehisa_Nakaue.png</pre
+                  >
+                  <li>
+                    Заголовок другого рівня: <span class="accent">Маріо</span>.
+                  </li>
+
+                  <li>
+                    Параграф з описом героя:
+                    <span
+                      >Маріо — відважний сантехнік, який завжди рятує принцесу.
+                      &lt;br&gt;Він стрибає по блоках і перемагає ворогів у
+                      грибному королівстві.</span
+                    >
+                  </li>
+
+                  <li>
+                    Після блоку встав тег
+                    <span class="accent">&lt;br clear="all"&gt;</span>.
+                  </li>
+                </ul>
+              </li>
+
+              <br />
+
+              <li>
+                <b>Блок про Луїджі</b>
+                <ul type="square">
+                  <li>
+                    Картинка з атрибутом
+                    <span class="accent">align="right"</span>:
+                  </li>
+                  <pre class="accent" style="color: yellowgreen">
+https://upload.wikimedia.org/wikipedia/en/b/be/Luigi_by_Shigehisa_Nakaue.png</pre
+                  >
+                  <li>
+                    Заголовок другого рівня: <span class="accent">Луїджі</span>.
+                  </li>
+
+                  <li>
+                    Параграф з описом:
+                    <span>
+                      Луїджі — молодший брат Маріо. &lt;br&gt;Він високий і
+                      трохи боязкуватий, але завжди допомагає Маріо у пригодах.
+                    </span>
+                  </li>
+
+                  <li>
+                    Тег
+                    <span class="accent">&lt;br clear="all"&gt;</span>.
+                  </li>
+                </ul>
+              </li>
+
+              <br />
+
+              <li>
+                <b>Блок про Принцесу Піч</b>
+                <ul type="square">
+                  <li>
+                    Картинка з атрибутом
+                    <span class="accent">align="left"</span>:
+                  </li>
+                  <pre class="accent" style="color: yellowgreen">
+https://upload.wikimedia.org/wikipedia/en/1/16/Princess_Peach_Stock_Art.png</pre
+                  >
+
+                  <li>
+                    Заголовок другого рівня:
+                    <span class="accent">Принцеса Піч</span>.
+                  </li>
+                  <li>
+                    Параграф з описом:
+                    <span>
+                      Принцеса Піч — добра правителька грибного королівства.
+                      &lt;br&gt;Вона часто потрапляє у біду і потребує допомоги
+                      Маріо та Луїджі.
+                    </span>
+                  </li>
+                  <li>
+                    Тег
+                    <span class="accent">&lt;br clear="all"&gt;</span>.
+                  </li>
+                </ul>
+              </li>
+
+              <br />
+
+              <li>
+                <b>Блок про Боузера</b>
+                <ul type="square">
+                  <li>
+                    Картинка з атрибутом
+                    <span class="accent">align="right"</span>:
+                  </li>
+                  <pre class="accent" style="color: yellowgreen">
+https://upload.wikimedia.org/wikipedia/en/d/d1/Bowser_by_Shigehisa_Nakaue.png</pre
+                  >
+
+                  <li>
+                    Заголовок другого рівня: <span class="accent">Боузер</span>.
+                  </li>
+                  <li>
+                    Параграф з описом:
+                    <span>
+                      Боузер — головний ворог Маріо. &lt;br&gt;Це велетенська
+                      черепаха-дракон, яка викрадає принцесу Піч.
+                    </span>
+                  </li>
+                  <li>
+                    Тег
+                    <span class="accent">&lt;br clear="all"&gt;</span>.
+                  </li>
+                </ul>
+              </li>
+
+              <br />
+
+              <li>
+                Параграф. Всередині — посилання на елемент з
+                <span>id="menu"</span> з текстом:
+                <span>Повернутись нагору</span>.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Завдання 2 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <div><span class="star">✦</span> Завдання (Частина 2 — CSS)</div>
+            <span class="acc-arrow">▶</span>
+          </div>
+
+          <div class="accordion__content">
+            <p>В <span class="accent">&lt;style&gt;</span> задати стилі:</p>
+            <ol>
+              <li>
+                <b>body:</b>
+                <ul type="square">
+                  <li>
+                    Фон — зображення
+                    <a
+                      href="./images/mario_background.jpg"
+                      download
+                      class="accent"
+                      >mario_background.jpg</a
+                    >
+                  </li>
+
+                  <li>
+                    Фон має покривати весь екран:
+                    <span class="accent">background-size: cover;</span>
+                  </li>
+
+                  <li>
+                    Основний шрифт — <span class="accent">Comic Sans MS</span>.
+                  </li>
+
+                  <li>
+                    <span class="accent">text-align: center;</span>
+                  </li>
+                </ul>
+              </li>
+
+              <br />
+
+              <li>
+                <b>h1:</b>
+                <ul type="square">
+                  <li>Колір — <span class="accent">red</span>.</li>
+                  <li>Розмір шрифту — <span class="accent">38px</span>.</li>
+                </ul>
+              </li>
+
+              <br />
+
+              <li>
+                <b>h2:</b>
+                <ul type="square">
+                  <li>Колір — <span class="accent">darkblue</span>.</li>
+                  <li>Розмір шрифту — <span class="accent">28px</span>.</li>
+                </ul>
+              </li>
+
+              <br />
+
+              <li>
+                <b>p:</b>
+                <ul type="square">
+                  <li>Розмір шрифту — <span class="accent">30px</span>.</li>
+                </ul>
+              </li>
+
+              <br />
+
+              <li>
+                <b>img:</b>
+                <ul type="square">
+                  <li>Висота — <span class="accent">300px</span>.</li>
+                  <li>Рамка — <span class="accent">5px solid brown</span>.</li>
+                  <li>Закруглення рамки — <span class="accent">10px</span>.</li>
+                </ul>
+              </li>
+
+              <br />
+
+              <li>
+                <b>#menu:</b>
+                <ul type="square">
+                  <li>Фон — <span class="accent">white</span>.</li>
+                </ul>
+              </li>
+
+              <br />
+
+              <li>
+                <b>a:</b>
+                <ul type="square">
+                  <li>Колір тексту — <span class="accent">red</span>.</li>
+                  <li>Фон — <span class="accent">white</span>.</li>
+                  <li>Розмір шрифту — <span class="accent">20px</span>.</li>
+                  <li>
+                    Без підкреслення —
+                    <span class="accent">text-decoration: none;</span>
+                  </li>
+                  <li><span class="accent">margin: 10px;</span>.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <br />
+
+        <!-- HTML -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <div><span class="star">✧</span> Підказки: HTML</div>
+            <span class="acc-arrow">▶</span>
+          </div>
+
+          <div class="accordion__content">
+            <h3>Структура сторінки</h3>
+            <pre><code class="language-html">&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;&lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <!-- &lt;&gt; -->
+            <h3>Заголовки</h3>
+            <pre><code class="language-html">&lt;h1&gt;Заголовок 1-го рівня&lt;/h1&gt;</code></pre>
+
+            <h3>Параграфи</h3>
+            <pre><code class="language-html">&lt;p&gt;Параграф тексту&lt;/p&gt;</code></pre>
+
+            <h3>Картинки</h3>
+            <pre><code class="language-html">&lt;img src="джерело_картинки" alt="альтернативний_текст"&gt;</code></pre>
+
+            <h3>Розміщення картинок відносно тексту</h3>
+            <pre><code class="language-html">&lt;!-- картинка зліва, текст справа від неї --&gt;
+&lt;img src="джерело_картинки" align="left"&gt;
+&lt;p&gt;параграф тексту...&lt;/p&gt;
+
+&lt;br clear="all"&gt; &lt;!-- очистити попередній "align" --&gt; 
+
+&lt;!-- картинка справа, текст зліва від неї --&gt;
+&lt;img src="джерело_картинки" align="right"&gt;
+&lt;p&gt;параграф тексту...&lt;/p&gt;
+
+&lt;br clear="all"&gt;</code></pre>
+
+            <h3>Посилання</h3>
+            <pre><code class="language-html">&lt;a href="адреса_посилання"&gt;Текст посилання&lt;/a&gt;</code></pre>
+
+            <h3>Відкрити посилання в новій вкладці</h3>
+            <pre><code class="language-html">&lt;a href="адреса_посилання" target="_blank"&gt;Текст посилання&lt;/a&gt;</code></pre>
+            <ul>
+              <li>
+                <span>target="_self"</span> відкрити в тій самій вкладці
+                (по-замовчуванню)
+              </li>
+              <li><span>target="_blank"</span> — відкрити в новій вкладці</li>
+            </ul>
+
+            <h3>Посилання на зовнішній сайт</h3>
+            <pre><code class="language-html">&lt;a href="адреса_сайту"&gt;Текст посилання&lt;/a&gt;
+
+&lt;a href="https://www.wikipedia.org/"&gt;Wikipedia&lt;/a&gt;</code></pre>
+
+            <h3>Посилання на .html файл</h3>
+            <pre><code class="language-html">&lt;a href="назва_файлу"&gt;Текст посилання&lt;/a&gt;
+              
+&lt;a href="page2.html"&gt;Page 2&lt;/a&gt;</code></pre>
+
+            <h3>Посилання на елементи сторінки</h3>
+            <pre><code class="language-html">&lt;a href="#mario"&gt;Посилання на Маріо&lt;/a&gt;
+
+...
+
+&lt;h2 id="mario"&gt;Маріо&lt;/h2&gt;</code></pre>
+            <ul>
+              <li>
+                <span>id</span> — атрибут, який дозволяє дати елементу нове
+                ім'я.
+              </li>
+              <li>
+                Кожен <span>id</span> на сторінці має бути унікальний (не можна
+                давати однакове значення двом різним елементам).
+              </li>
+            </ul>
+
+            <h3>Посилання + Картинки</h3>
+            <pre><code class="language-html">&lt;a href="" target=""&gt;
+  &lt;img src="" alt=""&gt;
+&lt;/a&gt;
+
+&lt;!-- Посилання на зовнішній сайт --&gt;
+&lt;a href="https://en.wikipedia.org/wiki/Pikachu" target="_blank"&gt;
+  &lt;img src="images/Pokemons.png" alt="покемони"&gt;
+&lt;/a&gt;
+
+&lt;!-- Відкрити картинку в новій вкладці --&gt;
+&lt;a href="images/Pokemons.png" target="_blank"&gt;
+  &lt;img src="images/Pokemons.png" alt="покемони"&gt;
+&lt;/a&gt;
+
+&lt;!-- Завантажити картинку при натисканні --&gt;
+&lt;a href="images/Pokemons.png" download&gt;
+  &lt;img src="images/Pokemons.png" alt="покемони"&gt;
+&lt;/a&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <div><span class="star">✧</span> Підказки: CSS</div>
+            <span class="acc-arrow">▶</span>
+          </div>
+
+          <div class="accordion__content">
+            <h3>Картинка як фон сторінки</h3>
+            <pre><code class="language-css">body
+{
+  background-image: url(""); /* поставити картинку на фон */
+  background-repeat: no-repeat; /* прибрати повторення */
+  background-size: cover; /* розтягнути на весь екран */
+}</code></pre>
+
+            <h3>Розташувати всі елементи по центру</h3>
+            <pre><code class="language-css">body
+{
+  text-align: center;
+}</code></pre>
+
+            <h3>Шрифт</h3>
+            <pre><code class="language-css">font-family: "Comic Sans MS"; /* сімейство шрифтів */
+font-size: 25px; /* розмір шрифту */</code></pre>
+
+            <h3>Колір тексту та фону</h3>
+            <pre><code class="language-css">color: red; /* колір тексту */
+background-color: green; /* колір фону */</code></pre>
+
+            <h3>Рамка</h3>
+            <pre><code class="language-css">border: 2px solid red; /* ширина стиль колір */
+border-radius: 10px; /* заокруглення кутів */
+
+/* можна також задати властивості рамки окремо */
+border-width: 2px; /* ширина */
+border-style: solid; /* стиль */
+border-color: red; /* колір */</code></pre>
+
+            <p>Стилі рамок:</p>
+            <img
+              src="https://themes.webuniverseua.com/courses/HTML_CSS/theme5/resources/border_style.png"
+              alt=""
+            />
+
+            <h3>Ширина і висота</h3>
+            <pre><code class="language-css">width: 200px; /* ширина */
+height: 100px; /* висота */</code></pre>
+
+            <h3>Стилізація посилань</h3>
+            <pre><code class="language-css">a 
+{
+  text-decoration: none; /* прибрати підкреслення тексту */
+}
+
+/* стилі при наведенні курсора мишки */
+a:hover 
+{
+  color: red; 
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <a href="./task8_1.html" target="_blank"
+        ><img src="./images/res_8_1.png" alt="index8_1_result"
+      /></a>
+
+      <hr />
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
